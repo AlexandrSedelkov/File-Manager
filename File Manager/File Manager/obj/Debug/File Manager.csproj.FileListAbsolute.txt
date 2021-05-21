@@ -1,0 +1,32 @@
+D:\Repositories\File Manager\File Manager\bin\Debug\File Manager.exe.config
+D:\Repositories\File Manager\File Manager\bin\Debug\File Manager.exe
+D:\Repositories\File Manager\File Manager\bin\Debug\File Manager.pdb
+D:\Repositories\File Manager\File Manager\obj\Debug\File Manager.csprojAssemblyReference.cache
+D:\Repositories\File Manager\File Manager\obj\Debug\File_Manager.FileManagerForm.resources
+D:\Repositories\File Manager\File Manager\obj\Debug\File_Manager.Properties.Resources.resources
+D:\Repositories\File Manager\File Manager\obj\Debug\File Manager.csproj.GenerateResource.cache
+D:\Repositories\File Manager\File Manager\obj\Debug\File Manager.csproj.CoreCompileInputs.cache
+D:\Repositories\File Manager\File Manager\obj\Debug\File Manager.exe
+D:\Repositories\File Manager\File Manager\obj\Debug\File Manager.pdb
+D:\Repositories\File Manager\File Manager\obj\Debug\File_Manager.PasteForm.resources
+D:\Repositories\File Manager\File Manager\bin\Debug\DotNetZip.dll
+D:\Repositories\File Manager\File Manager\bin\Debug\DotNetZip.pdb
+D:\Repositories\File Manager\File Manager\bin\Debug\DotNetZip.xml
+D:\Repositories\File Manager\File Manager\obj\Debug\File_Manager.ArchiveForm.resources
+D:\Repositories\File Manager\File Manager\obj\Debug\File Manager.csproj.CopyComplete
+D:\Repositories\File-Manager\File Manager\bin\Debug\File Manager.exe.config
+D:\Repositories\File-Manager\File Manager\bin\Debug\File Manager.exe
+D:\Repositories\File-Manager\File Manager\bin\Debug\File Manager.pdb
+D:\Repositories\File-Manager\File Manager\bin\Debug\DotNetZip.dll
+D:\Repositories\File-Manager\File Manager\bin\Debug\DotNetZip.pdb
+D:\Repositories\File-Manager\File Manager\bin\Debug\DotNetZip.xml
+D:\Repositories\File-Manager\File Manager\obj\Debug\File Manager.csprojAssemblyReference.cache
+D:\Repositories\File-Manager\File Manager\obj\Debug\File_Manager.ArchiveForm.resources
+D:\Repositories\File-Manager\File Manager\obj\Debug\File_Manager.PasteForm.resources
+D:\Repositories\File-Manager\File Manager\obj\Debug\File_Manager.FileManagerForm.resources
+D:\Repositories\File-Manager\File Manager\obj\Debug\File_Manager.Properties.Resources.resources
+D:\Repositories\File-Manager\File Manager\obj\Debug\File Manager.csproj.GenerateResource.cache
+D:\Repositories\File-Manager\File Manager\obj\Debug\File Manager.csproj.CoreCompileInputs.cache
+D:\Repositories\File-Manager\File Manager\obj\Debug\File Manager.csproj.CopyComplete
+D:\Repositories\File-Manager\File Manager\obj\Debug\File Manager.exe
+D:\Repositories\File-Manager\File Manager\obj\Debug\File Manager.pdb
