@@ -1,7 +1,7 @@
 ﻿
 namespace File_Manager
 {
-    partial class FileManagerForm
+    partial class fileManagerForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -30,7 +30,7 @@ namespace File_Manager
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FileManagerForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fileManagerForm));
             this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
             this.quantityLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.mainTreeView = new System.Windows.Forms.TreeView();
@@ -49,6 +49,11 @@ namespace File_Manager
             this.listStyleButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.blackThemeButton = new System.Windows.Forms.Button();
+            this.whiteThemeButton = new System.Windows.Forms.Button();
+            this.thistleThemeButton = new System.Windows.Forms.Button();
+            this.mistyRoseTheme = new System.Windows.Forms.Button();
             this.mainStatusStrip.SuspendLayout();
             this.mainContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +91,9 @@ namespace File_Manager
             this.mainListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.mainListView.BackColor = System.Drawing.Color.White;
             this.mainListView.ContextMenuStrip = this.mainContextMenuStrip;
+            this.mainListView.ForeColor = System.Drawing.Color.Black;
             this.mainListView.HideSelection = false;
             this.mainListView.LabelEdit = true;
             this.mainListView.LargeImageList = this.iconList;
@@ -175,7 +182,7 @@ namespace File_Manager
             | System.Windows.Forms.AnchorStyles.Right)));
             this.filePathTextBox.Location = new System.Drawing.Point(145, 4);
             this.filePathTextBox.Name = "filePathTextBox";
-            this.filePathTextBox.Size = new System.Drawing.Size(905, 22);
+            this.filePathTextBox.Size = new System.Drawing.Size(728, 22);
             this.filePathTextBox.TabIndex = 8;
             // 
             // gridStyleButton
@@ -183,7 +190,7 @@ namespace File_Manager
             this.gridStyleButton.BackgroundImage = global::File_Manager.Properties.Resources.grid;
             this.gridStyleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.gridStyleButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gridStyleButton.Location = new System.Drawing.Point(60, 0);
+            this.gridStyleButton.Location = new System.Drawing.Point(66, 0);
             this.gridStyleButton.Name = "gridStyleButton";
             this.gridStyleButton.Size = new System.Drawing.Size(30, 30);
             this.gridStyleButton.TabIndex = 12;
@@ -226,11 +233,71 @@ namespace File_Manager
             this.label1.TabIndex = 13;
             this.label1.Text = "Путь:";
             // 
-            // FileManagerForm
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(874, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Темы:";
+            // 
+            // blackThemeButton
+            // 
+            this.blackThemeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.blackThemeButton.BackColor = System.Drawing.Color.Black;
+            this.blackThemeButton.Location = new System.Drawing.Point(959, 0);
+            this.blackThemeButton.Name = "blackThemeButton";
+            this.blackThemeButton.Size = new System.Drawing.Size(30, 30);
+            this.blackThemeButton.TabIndex = 15;
+            this.blackThemeButton.UseVisualStyleBackColor = false;
+            this.blackThemeButton.Click += new System.EventHandler(this.BlackThemeButton_Click);
+            // 
+            // whiteThemeButton
+            // 
+            this.whiteThemeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.whiteThemeButton.BackColor = System.Drawing.Color.White;
+            this.whiteThemeButton.Location = new System.Drawing.Point(923, 0);
+            this.whiteThemeButton.Name = "whiteThemeButton";
+            this.whiteThemeButton.Size = new System.Drawing.Size(30, 30);
+            this.whiteThemeButton.TabIndex = 16;
+            this.whiteThemeButton.UseVisualStyleBackColor = false;
+            this.whiteThemeButton.Click += new System.EventHandler(this.WhiteThemeButton_Click);
+            // 
+            // thistleThemeButton
+            // 
+            this.thistleThemeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.thistleThemeButton.BackColor = System.Drawing.Color.Thistle;
+            this.thistleThemeButton.Location = new System.Drawing.Point(996, 0);
+            this.thistleThemeButton.Name = "thistleThemeButton";
+            this.thistleThemeButton.Size = new System.Drawing.Size(30, 30);
+            this.thistleThemeButton.TabIndex = 17;
+            this.thistleThemeButton.UseVisualStyleBackColor = false;
+            this.thistleThemeButton.Click += new System.EventHandler(this.ThistleThemeButton_Click);
+            // 
+            // mistyRoseTheme
+            // 
+            this.mistyRoseTheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mistyRoseTheme.BackColor = System.Drawing.Color.MistyRose;
+            this.mistyRoseTheme.Location = new System.Drawing.Point(1032, 0);
+            this.mistyRoseTheme.Name = "mistyRoseTheme";
+            this.mistyRoseTheme.Size = new System.Drawing.Size(30, 30);
+            this.mistyRoseTheme.TabIndex = 18;
+            this.mistyRoseTheme.UseVisualStyleBackColor = false;
+            this.mistyRoseTheme.Click += new System.EventHandler(this.MistyRoseTheme_Click);
+            // 
+            // fileManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1062, 550);
+            this.Controls.Add(this.mistyRoseTheme);
+            this.Controls.Add(this.thistleThemeButton);
+            this.Controls.Add(this.whiteThemeButton);
+            this.Controls.Add(this.blackThemeButton);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridStyleButton);
             this.Controls.Add(this.listStyleButton);
@@ -240,7 +307,8 @@ namespace File_Manager
             this.Controls.Add(this.mainTreeView);
             this.Controls.Add(this.mainStatusStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FileManagerForm";
+            this.Name = "fileManagerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Explorer";
             this.Load += new System.EventHandler(this.FileManagerForm_Load);
             this.mainStatusStrip.ResumeLayout(false);
@@ -271,6 +339,11 @@ namespace File_Manager
         private System.Windows.Forms.Button listStyleButton;
         private System.Windows.Forms.Button gridStyleButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button blackThemeButton;
+        private System.Windows.Forms.Button whiteThemeButton;
+        private System.Windows.Forms.Button thistleThemeButton;
+        private System.Windows.Forms.Button mistyRoseTheme;
     }
 }
 

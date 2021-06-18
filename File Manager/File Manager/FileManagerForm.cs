@@ -14,11 +14,11 @@ using System.Media;
 
 namespace File_Manager
 {
-    public partial class FileManagerForm : Form
+    public partial class fileManagerForm : Form
     {
         string contextPath = "";
         string pastPath = "";
-        public FileManagerForm()
+        public fileManagerForm()
         {
             InitializeComponent();
         }
@@ -109,9 +109,7 @@ namespace File_Manager
         }
 
         private void CopyButton_Click(object sender, EventArgs e)
-        {
-            /*Thread copyThread = new Thread(new ThreadStart(Copy));
-            copyThread.Start();*/
+        { 
             try
             {
                 contextPath = filePathTextBox.Text + mainListView.SelectedItems[0].Text + mainListView.SelectedItems[0].SubItems[1].Text;
@@ -162,7 +160,9 @@ namespace File_Manager
                         paste.ShowDialog();
                         index = paste.ApplyOrder();
                         if (index == 0 || index == 1)
+                        {
                             File.Copy(sourcePath, destinationPath, true);
+                        }
                     }
                     else
                     {
@@ -207,7 +207,9 @@ namespace File_Manager
                                 foreach (string file_name1 in Directory.GetFiles(sourcePath, "*", SearchOption.AllDirectories))
                                 {
                                     if (!File.Exists(Path.Combine(destinationPath, file_name1.Substring(sourcePath.Length + 1))))
+                                    {
                                         File.Copy(file_name1, Path.Combine(destinationPath, file_name1.Substring(sourcePath.Length + 1)));
+                                    }
                                 }
                                 break;
                             }
@@ -299,7 +301,6 @@ namespace File_Manager
                     if (AskBeforeDelete(path, fileName))
                     {
                         DeleteFunction(path);
-
                     }
                     index--;
                 }
@@ -503,6 +504,54 @@ namespace File_Manager
         private void GridStyleButton_Click(object sender, EventArgs e)
         {
             mainListView.View = View.LargeIcon;
+        }
+
+        private void BlackThemeButton_Click(object sender, EventArgs e)
+        {
+            mainListView.BackColor = Color.Black;
+            mainListView.ForeColor = Color.White;
+            mainTreeView.BackColor = Color.Black;
+            mainTreeView.ForeColor = Color.White;
+            mainContextMenuStrip.BackColor = Color.Black;
+            mainContextMenuStrip.ForeColor = Color.White;
+            mainStatusStrip.BackColor = Color.Black;
+            mainStatusStrip.ForeColor = Color.White;
+        }
+
+        private void WhiteThemeButton_Click(object sender, EventArgs e)
+        {
+            mainListView.BackColor = Color.White;
+            mainListView.ForeColor = Color.Black;
+            mainTreeView.BackColor = Color.White;
+            mainTreeView.ForeColor = Color.Black;
+            mainContextMenuStrip.BackColor = Color.White;
+            mainContextMenuStrip.ForeColor = Color.Black;
+            mainStatusStrip.BackColor = Color.White;
+            mainStatusStrip.ForeColor = Color.Black;
+        }
+
+        private void ThistleThemeButton_Click(object sender, EventArgs e)
+        {
+            mainListView.BackColor = Color.Thistle;
+            mainListView.ForeColor = Color.Black;
+            mainTreeView.BackColor = Color.Thistle;
+            mainTreeView.ForeColor = Color.Black;
+            mainContextMenuStrip.BackColor = Color.Thistle;
+            mainContextMenuStrip.ForeColor = Color.Black;
+            mainStatusStrip.BackColor = Color.Thistle;
+            mainStatusStrip.ForeColor = Color.Black;
+        }
+
+        private void MistyRoseTheme_Click(object sender, EventArgs e)
+        {
+            mainListView.BackColor = Color.MistyRose;
+            mainListView.ForeColor = Color.Black;
+            mainTreeView.BackColor = Color.MistyRose;
+            mainTreeView.ForeColor = Color.Black;
+            mainContextMenuStrip.BackColor = Color.MistyRose;
+            mainContextMenuStrip.ForeColor = Color.Black;
+            mainStatusStrip.BackColor = Color.MistyRose;
+            mainStatusStrip.ForeColor = Color.Black;
         }
     }
 }

@@ -10,11 +10,6 @@ namespace File_Manager
 {
     class Libraries
     {
-        /// <summary>
-        /// Получение списка дисков и создание узлов для TreeView
-        /// </summary>
-        /// <param name="tv"></param>
-        /// <param name="lDrives"></param>
         public static void SetLocalDrive(TreeView tv)
         {
             DriveInfo[] lDrives = DriveInfo.GetDrives();
@@ -28,11 +23,6 @@ namespace File_Manager
             }
         }
 
-        /// <summary>
-        /// Получение каталогов и добавление их в ListView
-        /// </summary>
-        /// <param name="path"></param>
-        /// <param name="lv"></param>
         public static void GetDirectories(string path, ListView lv)
         {
             try
@@ -46,7 +36,6 @@ namespace File_Manager
                 string[] files = Directory.GetFiles(path);
 
                 AddListViewItems(files, lv, 1);
-
             }
             catch (Exception)
             {
@@ -54,12 +43,6 @@ namespace File_Manager
             }
         }
 
-        /// <summary>
-        /// Заполняет переданный ListView элементами
-        /// </summary>
-        /// <param name="items"></param>
-        /// <param name="lv"></param>
-        /// <param name="picture"></param>
         private static void AddListViewItems(string[] items, ListView lv, int picture)
         {
             foreach (string item in items)
@@ -70,11 +53,6 @@ namespace File_Manager
             }
         }
 
-        /// <summary>
-        /// Получение под папок по указанному пути
-        /// </summary>
-        /// <param name="tn"></param>
-        /// <param name=""></param>
         public static void GetSubDir(TreeNode tn, string path)
         {
             try
@@ -95,11 +73,6 @@ namespace File_Manager
             }
         }
 
-        /// <summary>
-        /// Поиск узла по пути и в случае нахождения - выбрать его
-        /// </summary>
-        /// <param name="tv"></param>
-        /// <param name="path"></param>
         public static void SearchNode(TreeView tv, string path)
         {
             TreeNode res = null;
@@ -118,12 +91,6 @@ namespace File_Manager
             }
         }
 
-        /// <summary>
-        /// Функция для поиска в дочерних узлах дерева
-        /// </summary>
-        /// <param name="tnc"></param>
-        /// <param name="path"></param>
-        /// <param name="res"></param>
         private static void Searching(TreeNodeCollection tnc, string path, ref TreeNode res)
         {
             foreach (TreeNode tn in tnc)
@@ -134,7 +101,6 @@ namespace File_Manager
                 }
 
                 Searching(tn.Nodes, path, ref res);
-
             }
         }
     }

@@ -39,9 +39,9 @@ namespace File_Manager
             // 
             // overwriteButton
             // 
-            this.overwriteButton.Location = new System.Drawing.Point(2, 161);
+            this.overwriteButton.Location = new System.Drawing.Point(12, 161);
             this.overwriteButton.Name = "overwriteButton";
-            this.overwriteButton.Size = new System.Drawing.Size(77, 23);
+            this.overwriteButton.Size = new System.Drawing.Size(84, 32);
             this.overwriteButton.TabIndex = 0;
             this.overwriteButton.Text = "Overwrite";
             this.overwriteButton.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@ namespace File_Manager
             // 
             // overwriteAllButton
             // 
-            this.overwriteAllButton.Location = new System.Drawing.Point(85, 161);
+            this.overwriteAllButton.Location = new System.Drawing.Point(102, 161);
             this.overwriteAllButton.Name = "overwriteAllButton";
-            this.overwriteAllButton.Size = new System.Drawing.Size(100, 23);
+            this.overwriteAllButton.Size = new System.Drawing.Size(100, 32);
             this.overwriteAllButton.TabIndex = 1;
             this.overwriteAllButton.Text = "Overwrite All";
             this.overwriteAllButton.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@ namespace File_Manager
             // 
             // skipButton
             // 
-            this.skipButton.Location = new System.Drawing.Point(203, 161);
+            this.skipButton.Location = new System.Drawing.Point(208, 161);
             this.skipButton.Name = "skipButton";
-            this.skipButton.Size = new System.Drawing.Size(75, 23);
+            this.skipButton.Size = new System.Drawing.Size(82, 32);
             this.skipButton.TabIndex = 2;
             this.skipButton.Text = "Skip";
             this.skipButton.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@ namespace File_Manager
             // 
             // skipAllButton
             // 
-            this.skipAllButton.Location = new System.Drawing.Point(284, 161);
+            this.skipAllButton.Location = new System.Drawing.Point(296, 161);
             this.skipAllButton.Name = "skipAllButton";
-            this.skipAllButton.Size = new System.Drawing.Size(75, 23);
+            this.skipAllButton.Size = new System.Drawing.Size(84, 32);
             this.skipAllButton.TabIndex = 3;
             this.skipAllButton.Text = "Skip All";
             this.skipAllButton.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@ namespace File_Manager
             // 
             // stopButton
             // 
-            this.stopButton.Location = new System.Drawing.Point(365, 161);
+            this.stopButton.Location = new System.Drawing.Point(386, 161);
             this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(75, 23);
+            this.stopButton.Size = new System.Drawing.Size(75, 32);
             this.stopButton.TabIndex = 4;
             this.stopButton.Text = "Stop";
             this.stopButton.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@ namespace File_Manager
             this.label1.TabIndex = 5;
             this.label1.Text = "This file is already exist";
             // 
-            // CopyForm
+            // PasteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,7 +107,8 @@ namespace File_Manager
             this.Controls.Add(this.skipButton);
             this.Controls.Add(this.overwriteAllButton);
             this.Controls.Add(this.overwriteButton);
-            this.Name = "CopyForm";
+            this.Name = "PasteForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CopyForm";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -69,6 +69,7 @@ namespace File_Manager
             this.Controls.Add(this.nameButton);
             this.Controls.Add(this.label1);
             this.Name = "ArchiveForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ArchiveForm";
             this.ResumeLayout(false);
             this.PerformLayout();
